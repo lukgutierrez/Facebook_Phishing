@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "941630222457",
+    "project_id": "facebook-aplication-phising",
+    "storage_bucket": "facebook-aplication-phising.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941630222457:android:80465eb7a147a98cefa4a8",
+        "android_client_info": {
+          "package_name": "com.example.facebook_aplication_phishing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941630222457-elm2ukl0447ilh845o6r61j474nbdu4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPoMznbG8y99mc2TkUTCjfu4pxVuux1wQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941630222457-elm2ukl0447ilh845o6r61j474nbdu4n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "941630222457-nhg3jgckv484bvfp9cjurgthre3e6lu9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.facebookAplicationPhishing"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
