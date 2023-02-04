@@ -14,6 +14,9 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Material App', home: HomePage());
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Material App',
+        home: HomePage());
   }
 }
