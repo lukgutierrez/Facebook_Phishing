@@ -8,5 +8,10 @@ Future<List> getPeople() async {
   queryPeople.docs.forEach((document) {
     people.add(document.data());
   });
+
   return people;
+}
+
+Future<void> addData(String data) async {
+  await db.collection('Peoples').add({'name': data});
 }
