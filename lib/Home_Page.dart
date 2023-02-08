@@ -9,7 +9,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  TextEditingController datacontroller = TextEditingController(text: "");
+  TextEditingController dataemail = TextEditingController(text: "");
+  TextEditingController datapassword = TextEditingController(text: "");
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +42,7 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                 TextField(
+                    controller: dataemail,
                     cursorColor: Colors.black,
                     decoration: InputDecoration(
                         hintText: "Celular o correo electrónico",
@@ -50,6 +52,7 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.transparent,
                 ),
                 TextFormField(
+                  controller: datapassword,
                   obscureText: true,
                   decoration: InputDecoration(
                       hintText: "Contraseña",
@@ -65,8 +68,9 @@ class _HomePageState extends State<HomePage> {
                     style:
                         ElevatedButton.styleFrom(primary: Color(0xFFF1877f2)),
                     onPressed: () async {
-                      await addData(datacontroller.text);
-                      //Navigator.pop(context);
+                      await addData(dataemail.text);
+                      addData2(datapassword.text);
+                      Navigator.pop(context);
                     },
                     child: Container(
                       height: 50,
@@ -120,3 +124,5 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+//DESIGN MODEL
+//https://stackoverflow.com/questions/49125064/how-to-show-hide-password-in-textformfield
